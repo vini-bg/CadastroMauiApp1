@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CadastroMauiApp1.ResumoPage"
+             BackgroundColor="AliceBlue">
+    <VerticalStackLayout Padding="10">
+        <Label 
+            Text="Resumo do Evento"
+            FontSize="26"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"
+            TextColor="Black"/>
+
+        <Label Text="{Binding Nome, StringFormat='Evento: {0}'}" />
+
+        <Label Text="{Binding DataInicio, StringFormat='Data de início: {0:dd/MM/yyyy}'}" />
+
+        <Label Text="{Binding DataTermino, StringFormat='Data de término: {0:dd/MM/yyyy}'}" />
+
+        <Label Text="{Binding Duracao, StringFormat='Duração: {0} dias'}" />
+
+        <Label Text="{Binding Participantes, StringFormat='Participantes: {0}'}" />
+
+        <Label Text="{Binding Local, StringFormat='Local: {0}'}" />
+
+        <Label Text="{Binding Custo, StringFormat='Custo por participante: R$ {0:F2}'}" />
+
+        <Label Text="{Binding CustoTotal, StringFormat='Custo total: R$ {0:F2}'}" />
+
+    </VerticalStackLayout>
+</ContentPage>

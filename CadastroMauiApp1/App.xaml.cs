@@ -11,7 +11,12 @@ namespace CadastroMauiApp1
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-            return new Window(new AppShell());
+            var window = new Window(new AppShell());
+
+            window.Width = 560;
+            window.Height = 840;
+
+            return window;
         }
     }
 }
